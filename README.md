@@ -25,7 +25,7 @@ The data frames for the script for the models (Species_distribution_models.R) an
 
 ### Field_experiment.csv
 
-This data frame contains the data of a host choice experiment performed in the Swiss Alps at two different elevations (1500 m and 2150 m). This experiment aimed to see whether low-elevation Lepidoptera are able to shift to a new host plant from a higher elevation or not. Data were collected during June and July 2021 by Baptiste Bovay. This data frame contains the following variables:
+This data frame contains the data of a host choice experiment performed with adults Lepidoptera in the Swiss Alps at two different elevations (1500 m and 2150 m). This experiment aimed to see whether low-elevation Lepidoptera are able to shift to a new host plant from a higher elevation or not. Data were collected during June and July 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. Plant: the plant species used
 2. Elevation: The elevation where the plant was translocated
@@ -37,6 +37,33 @@ This data frame contains the data of a host choice experiment performed in the S
 8. Eggs: the total number of eggs laid on the plant
 9. Presence: tell if there were any egg patches laid in the plant (0 = no and 1 = yes)
 
+### Caterpillar_preference.csv
+
+This data frame contains the data of a host choice experiment performed with caterpillars in the controlled conditions. This experiment aimed to see whether low-elevation Lepidoptera are able to shift to a new host plant from a higher elevation or not. Data were collected between July and November 2021 by Baptiste Bovay. This data frame contains the following variables:
+
+1. ID: a unique ID for each caterpillar
+2. Come_from: The plant on which the caterpillar was reared
+3. Food_plant: The plant species tested
+4. Time: The duration of the experiment (hours)
+5. Size_before: The size of the leave before the experiment (cm^2)
+6. Size_after: The size of the leave after the experiment (cm^2)
+7. Lepidoptera: The species of Lepidoptera used for the host choice experiment
+
+### Caterpillar_performance.csv
+
+This data frame contains the data of a performance experiment performed with caterpillars in the controlled conditions. This experiment aimed to see the growth of caterpillars when feeding on low- or high-elevation host plants translocated either at low- or high-elevation. Data were collected between July and August 2021 by Baptiste Bovay. This data frame contains the following variables:
+
+1. ID: a unique ID for each caterpillar
+2. Lepidoptera: The species of Lepidoptera used for the host choice experiment
+3. Plant: The plant species tested
+4. Elevation: The elevation at which the tested plant was translocated
+5. Time: The duration of the experiment (day)
+6. Weight_1: The Weight of the caterpillar before the test (g)
+7. Weight_2: The Weight of the caterpillar after the test (g)
+
+### Diapause
+
+This data frame contains the data of rearing experiment performed with caterpillars of Melitaea celadussa in the controlled conditions. This experiment aimed to see the influence of low- or high-elevation host plants on the diapause. Data were collected between August and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 
 

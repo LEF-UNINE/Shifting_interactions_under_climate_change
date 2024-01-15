@@ -5,7 +5,7 @@ This is a repository for the code and the data used for the paper "**Adapting to
 The code is divided into three scripts:
 - Main_analyses.R (contain the analyses done for the main text of the paper)
 - Supplementary_analyses.R (contains the analyses done for the supplementary document of the paper)
-- Species_distribution_models.R (contains the script for the creation of the model used in the paper)
+- Species_distribution_models.R (contains the script for the species distribution analyses and modelling)
 
 The main script (Main_analyses.R) uses 6 data frames, one for each section with a corresponding name:
 - Field_experiment.csv
@@ -19,7 +19,7 @@ The script for the supplementary material (Supplementary_analyses.R) uses 2 data
 - Plant_traits.csv
 - Temperature.csv
 
-The data frames for the script for the models (Species_distribution_models.R) and for the analyses of historical species distribution (section 3 of the code Supplementary_analyses.R) are not published online as occurrences data are protected. However, with a good justification, they could be requested to the National Data and Information Center on the Swiss Fauna (www.infofauna.ch). 
+The data frames for the species distribution analyses (Species_distribution_models.R) are not published online as occurrences data are protected. However, with a good justification, they could be requested to the National Data and Information Center on the Swiss Fauna (www.infofauna.ch). 
 
 ## Scripts information
 

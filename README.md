@@ -75,5 +75,24 @@ This data frame contains the data of a rearing experiment performed with caterpi
 
 This data frame contains the data of a rearing experiment performed with Melitaea celadussa in controlled conditions. This experiment aimed to see whetehr the wing size of imago could change according to the host plant. Data were collected between July and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
+1. ID: a unique ID for each butterfly
+2. Plant: The plant species used as food plant
+3. Generation: The generation of the butterfly in the rearing
+4. Wing_1: The surface of the top-left wing (mm^2)
+5. Wing_2: The surface of the top-right wing (mm^2)
+6. Wing_3: The surface of the bottom-left wing (mm^2)
+7. Wing_4: The surface of the bottom-right wing (mm^2)
 
+### Secondary_metabolites.csv
 
+1. Plant: The plant species used
+2. Elevation: The elevation where the plant was translocated
+3. ID: a unique ID for each plant
+4. Lepidoptera: The focal Lepidoptera species feeding of the plant
+5. The ID of the cages where plants were translocated
+6. Date: the date of the experimentation with butterflies (NA = the plant was not used in previous experiment)
+7. Catapol: The concentration of catapol (relative concentration)
+8. Aucubin: The concentration of aucubin (relative concentration)
+9. Linamarin: The concentration of linamarin (mg/g)
+10. Lautostralin: The concentration of lautostralin (mg/g)
+11. Sample_weight: weight of the éeaf sample used for the analyses

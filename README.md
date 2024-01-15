@@ -21,6 +21,24 @@ The script for the supplementary material (Supplementary_analyses.R) uses 2 data
 
 The data frames for the script for the models (Species_distribution_models.R) and for the analyses of historical species distribution (section 3 of the code Supplementary_analyses.R) are not published online as occurrences data are protected. However, with a good justification, they could be requested to the National Data and Information Center on the Swiss Fauna (www.infofauna.ch). 
 
+## Scripts information
+
+### Main_analyses.R
+
+This script contains the analyses made for the paper "Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species", excluding the analyses presented in the supplementary material and excluding the species distribution model.
+
+This script is divided in 1 + 7 sections. The introduction section (Packages, theme and functions) describs the packages used and set up the themes for the plots and a function used several time in the script. The first section of analyses (Field experiment) contains the code done for the field experiment which aimed to understand whether adult Lepdidoptera prefer to lay eggs on high- ro low-elevation plants. The second section (Caterpillar preference) contains the analyses of a feeding choice experiment of caterpillars of two Lepidoptera species. The third section (Caterpillar performance) contains the analses of a performance experiment which aimed to see any differences in growth between caterpillars feeding on a high- or a low-elevation host plant. The fourth section (Pupation rate) contains the code which allow to estimate the differences in pupation rate between *Melitaea celadussa* caterpillars feeding either on high- or low-elevation host plants. The fifth section (Wing size) contains the code which allow to estimate the differences in wing size between *M. celadussa* caterpillars feeding either on high- or low-elevation host plants. The sixth section (Chemical analyses) aims to test whether high- and low- elevation pairs of congeneric species have difference in defensive compound concentration in the leaves. Finally, the seventh section (Details of the R session) contains all the information about the R session used to run these analyses.
+
+### Supplementary_analyses.R
+
+This script contains the analyses made for the supplementary material of the paper "Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species", excluding the species distribution model.
+
+This script is divided in 1 + 2 sections. The introduction section (Packages, theme and functions) describs the packages used and set up the themes for the plots and a function used several time in the script. The first section of analyses (Plant traits) contains the code done for the analyses of the traits measured on the plants used for the field experiment and a on few other individuals (see "Material and methods"). This section includes PCA and PERMANOVA analyses on a set of traits (herbivory, size, number of leaves, SLA, number of stems and sumber of inflorecences) and analyses using a linear model for the C:N ratio of the plants. The second section (Temperature analyses) allows to plot the average daily temperature reccorded on the site during the field experiment.  Finally, the third section (Details of the R session) contains all the information about the R session used to run these analyses.
+
+### Species_distribution_models.R
+
+This script contains the species distribution model and other analyses on the historical and predicted shift toward higher elevation for two Lepidoptera species: *M. celadussa* and *Z. filipendulae*.
+
 ## Dataframe information
 
 ### Field_experiment.csv
@@ -63,7 +81,7 @@ This data frame contains the data of a performance experiment performed with cat
 
 ### Pupation_rate.csv
 
-This data frame contains the data of a rearing experiment performed with caterpillars of Melitaea celadussa in controlled conditions. This experiment aimed to see the influence of low- or high-elevation host plants on the diapause. Data were collected between August and October 2021 by Baptiste Bovay. This data frame contains the following variables:
+This data frame contains the data of a rearing experiment performed with caterpillars of *M. celadussa* in controlled conditions. This experiment aimed to see the influence of low- or high-elevation host plants on the diapause. Data were collected between August and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. ID: a unique ID for each caterpillar
 2. Cage: an ID for each cage used (each cage contained 3 caterpillars)
@@ -73,7 +91,7 @@ This data frame contains the data of a rearing experiment performed with caterpi
 
 ### Wing_size.csv
 
-This data frame contains the data of a rearing experiment performed with Melitaea celadussa in controlled conditions. This experiment aimed to see whether the wing size of imago could change according to the host plant. Data were collected between July and October 2021 by Baptiste Bovay. This data frame contains the following variables:
+This data frame contains the data of a rearing experiment performed with *M. celadussa* in controlled conditions. This experiment aimed to see whether the wing size of imago could change according to the host plant. Data were collected between July and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. ID: a unique ID for each butterfly
 2. Plant: The plant species used as food

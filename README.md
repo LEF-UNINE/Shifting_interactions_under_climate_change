@@ -19,7 +19,7 @@ The script for the supplementary material (Supplementary_analyses.R) uses 2 data
 - Plant_traits.csv
 - Temperature.csv
 
-The data frames for the script for the models (Species_distribution_models.R) and for the analyses of historical species distribution (section 3 of the code Supplementary_analyses.R) are not published online as occurences data are protected. However, with a good justification, they could be requested to the National Data and Information Center on the Swiss Fauna (www.infofauna.ch). 
+The data frames for the script for the models (Species_distribution_models.R) and for the analyses of historical species distribution (section 3 of the code Supplementary_analyses.R) are not published online as occurrences data are protected. However, with a good justification, they could be requested to the National Data and Information Center on the Swiss Fauna (www.infofauna.ch). 
 
 ## Dataframe information
 
@@ -39,7 +39,7 @@ This data frame contains the data of a host choice experiment performed with adu
 
 ### Caterpillar_preference.csv
 
-This data frame contains the data of a host choice experiment performed with caterpillars in the controlled conditions. This experiment aimed to see whether low-elevation Lepidoptera are able to shift to a new host plant from a higher elevation or not. Data were collected between July and November 2021 by Baptiste Bovay. This data frame contains the following variables:
+This data frame contains the data of a host choice experiment performed with caterpillars in controlled conditions. This experiment aimed to see whether low-elevation Lepidoptera are able to shift to a new host plant from a higher elevation or not. Data were collected between July and November 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. ID: a unique ID for each caterpillar
 2. Come_from: The plant on which the caterpillar was reared
@@ -51,7 +51,7 @@ This data frame contains the data of a host choice experiment performed with cat
 
 ### Caterpillar_performance.csv
 
-This data frame contains the data of a performance experiment performed with caterpillars in the controlled conditions. This experiment aimed to see the growth of caterpillars when feeding on low- or high-elevation host plants translocated either at low- or high-elevation. Data were collected between July and August 2021 by Baptiste Bovay. This data frame contains the following variables:
+This data frame contains the data of a performance experiment performed with caterpillars in controlled conditions. This experiment aimed to see the growth of caterpillars when feeding on low- or high-elevation host plants translocated either at low- or high-elevation. Data were collected between July and August 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. ID: a unique ID for each caterpillar
 2. Lepidoptera: The species of Lepidoptera used for the host choice experiment
@@ -66,8 +66,8 @@ This data frame contains the data of a performance experiment performed with cat
 This data frame contains the data of a rearing experiment performed with caterpillars of Melitaea celadussa in controlled conditions. This experiment aimed to see the influence of low- or high-elevation host plants on the diapause. Data were collected between August and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. ID: a unique ID for each caterpillar
-2. Cage: a ID for each cage used (each cage contained 3 caterpillars)
-3. Plant: The plant species used as food plant in the cage
+2. Cage: an ID for each cage used (each cage contained 3 caterpillars)
+3. Plant: The plant species used as food in the cage
 4. Week: The week on which the caterpillar enters diapause
 5. Pupation: tell if goes rather in pupation or diapause (0 = diapause and 1 = pupation)
 
@@ -76,7 +76,7 @@ This data frame contains the data of a rearing experiment performed with caterpi
 This data frame contains the data of a rearing experiment performed with Melitaea celadussa in controlled conditions. This experiment aimed to see whether the wing size of imago could change according to the host plant. Data were collected between July and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. ID: a unique ID for each butterfly
-2. Plant: The plant species used as food plant
+2. Plant: The plant species used as food
 3. Generation: The generation of the butterfly in the rearing
 4. Wing_1: The surface of the top-left wing (mm^2)
 5. Wing_2: The surface of the top-right wing (mm^2)
@@ -85,14 +85,14 @@ This data frame contains the data of a rearing experiment performed with Melitae
 
 ### Secondary_metabolites.csv
 
-This data frame contains the data of the concentration in secondary metabolites mesured in 4 plant species translocated in the Swiss Alps at two different elevations (1500 m and 2150 m). This experiment aimed to see whether congeneric low- and high-elevation plant produce different amount of chemical defences and whether a translocation change this amount of chemical defences. Leaf for the analyses were collected during June and August 2021 by Baptiste Bovay, chemical analyses were performed during October and November 2021 by Baptiste Bovay and Gaétan Glauser. This data frame contains the following variables:
+This data frame contains the data of the concentration in secondary metabolites measured in 4 plant species translocated in the Swiss Alps at two different elevations (1500 m and 2150 m). This experiment aimed to see whether congeneric low- and high-elevation plants produced different amounts of chemical defences and whether a translocation changed the amount of chemical defences. Leaf for the analyses were collected during June and August 2021 by Baptiste Bovay, chemical analyses were performed during October and November 2021 by Baptiste Bovay and Gaétan Glauser. This data frame contains the following variables:
 
 1. Plant: The plant species used
 2. Elevation: The elevation where the plant was translocated
 3. ID: a unique ID for each plant
-4. Lepidoptera: The focal Lepidoptera species feeding of the plant
+4. Lepidoptera: The focal Lepidoptera species feeding on the plant
 5. The ID of the cages where plants were translocated
-6. Date: the date of the experimentation with butterflies (NA = the plant was not used in previous experiment)
+6. Date: the date of the experimentation with butterflies (NA = the plant was not used in previous experiments)
 7. Catapol: The concentration of catapol (relative concentration)
 8. Aucubin: The concentration of aucubin (relative concentration)
 9. Linamarin: The concentration of linamarin (mg/g)

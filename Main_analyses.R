@@ -442,7 +442,7 @@ wings <- read.csv("Wing_size.csv", h = T, sep = ";")
 head(wings)
 
 # Set up correctly the factors
-wings$Treatment <- factor(wings$Treatment, levels = c("Wild", "P. lanceolata", "P. atrata"))
+wings$Plant <- factor(wings$Plant, levels = c("P. lanceolata", "P. atrata"))
 
 # Calculate the total wing area
 wings$tot <- (wings$Wing1 + wings$Wing2 + wings$Wing3 + wings$Wing4)
@@ -451,7 +451,7 @@ wings$tot <- (wings$Wing1 + wings$Wing2 + wings$Wing3 + wings$Wing4)
 # Data visualization:
 # - - - -  - - - - - -
 
-fig4 <- ggplot(wings, aes(x = Treatment, y= tot/100, fill = Treatment)) + geom_boxplot(size = 1) +
+fig4 <- ggplot(wings, aes(x = Plant, y= tot/100, fill = Plant)) + geom_boxplot(size = 1) +
   scale_fill_manual(values = c(ColM)) + ylab("Wings surface (cm^2)") +     
   my_theme + xlab(NULL) +
   theme(legend.position = "none") ; fig4
@@ -461,7 +461,7 @@ fig4 <- ggplot(wings, aes(x = Treatment, y= tot/100, fill = Treatment)) + geom_b
 # - - - - - - - - - - - - - - - - - - -
 
 # Built a LM model for the wing area 
-w1 <- lm(sqrt(tot) ~ Treatment, data = wings)
+w1 <- lm(sqrt(tot) ~ Plant, data = wings)
 
 # Assumption check
 plot(simulateResiduals(w1)) 

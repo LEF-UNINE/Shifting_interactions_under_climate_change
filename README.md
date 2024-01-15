@@ -73,7 +73,7 @@ This data frame contains the data of a rearing experiment performed with caterpi
 
 ### Wing_size.csv
 
-This data frame contains the data of a rearing experiment performed with Melitaea celadussa in controlled conditions. This experiment aimed to see whetehr the wing size of imago could change according to the host plant. Data were collected between July and October 2021 by Baptiste Bovay. This data frame contains the following variables:
+This data frame contains the data of a rearing experiment performed with Melitaea celadussa in controlled conditions. This experiment aimed to see whether the wing size of imago could change according to the host plant. Data were collected between July and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 1. ID: a unique ID for each butterfly
 2. Plant: The plant species used as food plant
@@ -84,6 +84,8 @@ This data frame contains the data of a rearing experiment performed with Melitae
 7. Wing_4: The surface of the bottom-right wing (mm^2)
 
 ### Secondary_metabolites.csv
+
+This data frame contains the data of the concentration in secondary metabolites mesured in 4 plant species translocated in the Swiss Alps at two different elevations (1500 m and 2150 m). This experiment aimed to see whether congeneric low- and high-elevation plant produce different amount of chemical defences and whether a translocation change this amount of chemical defences. Leaf for the analyses were collected during June and August 2021 by Baptiste Bovay, chemical analyses were performed during October and November 2021 by Baptiste Bovay and Gaétan Glauser. This data frame contains the following variables:
 
 1. Plant: The plant species used
 2. Elevation: The elevation where the plant was translocated

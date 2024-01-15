@@ -11,7 +11,7 @@ The main script (Main_analyses.R) uses 6 data frames, one for each section with 
 - Field_experiment.csv
 - Caterpillar_preference.csv
 - Caterpillar_performance.csv
-- Diapause.csv
+- Pupation_rate.csv
 - Wing_size.csv
 - Secondary_metabolites.csv
 
@@ -61,10 +61,19 @@ This data frame contains the data of a performance experiment performed with cat
 6. Weight_1: The Weight of the caterpillar before the test (g)
 7. Weight_2: The Weight of the caterpillar after the test (g)
 
-### Diapause
+### Pupation_rate.csv
 
-This data frame contains the data of rearing experiment performed with caterpillars of Melitaea celadussa in the controlled conditions. This experiment aimed to see the influence of low- or high-elevation host plants on the diapause. Data were collected between August and October 2021 by Baptiste Bovay. This data frame contains the following variables:
+This data frame contains the data of a rearing experiment performed with caterpillars of Melitaea celadussa in controlled conditions. This experiment aimed to see the influence of low- or high-elevation host plants on the diapause. Data were collected between August and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
+1. ID: a unique ID for each caterpillar
+2. Cage: a ID for each cage used (each cage contained 3 caterpillars)
+3. Plant: The plant species used as food plant in the cage
+4. Week: The week on which the caterpillar enters diapause
+5. Pupation: tell if goes rather in pupation or diapause (0 = diapause and 1 = pupation)
+
+### Wing_size.csv
+
+This data frame contains the data of a rearing experiment performed with Melitaea celadussa in controlled conditions. This experiment aimed to see whetehr the wing size of imago could change according to the host plant. Data were collected between July and October 2021 by Baptiste Bovay. This data frame contains the following variables:
 
 
 

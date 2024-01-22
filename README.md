@@ -2,10 +2,11 @@
 
 This is a repository for the code and the data used for the paper "**Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species**" written by Baptiste Bovay, Patrice Descombes, Yannick Chittaro, Gaétan Glauser, Hanna Nomoto and Sergio Rasmann.
 
-The code is divided into three scripts:
+The code is divided into four scripts:
 - Main_analyses.R (contain the analyses done for the main text of the paper)
 - Supplementary_analyses.R (contains the analyses done for the supplementary document of the paper)
-- Species_distribution_models.R (contains the script for the species distribution analyses and modelling)
+- Lepido_historical_migration.R (contains the analyses for the historical shift in elevation)
+- Species_distribution_models.R (contains the script for the species distribution models)
 
 The main script (Main_analyses.R) uses 6 data frames, one for each section with a corresponding name:
 - Field_experiment.csv
@@ -19,21 +20,27 @@ The script for the supplementary material (Supplementary_analyses.R) uses 2 data
 - Plant_traits.csv
 - Temperature.csv
 
-The data frames for the species distribution analyses (Species_distribution_models.R) are not published online as occurrences data are protected. However, with a good justification, they could be requested to the National Data and Information Center on the Swiss Fauna (www.infofauna.ch). 
+The data frames for the species distribution models (Species_distribution_models.R) and for the calculation of the historical shift in elevation are not published online as occurrences data are protected. However, with a good justification they could be requested to the National Data and Information Center on the Swiss Fauna (www.infofauna.ch). 
 
 ## Scripts information
 
 ### Main_analyses.R
 
-This script contains the analyses made for the paper "Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species", excluding the analyses presented in the supplementary material and excluding the species distribution model.
+This script contains the analyses made for the paper "Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species", excluding the analyses presented in the supplementary material and excluding the species distribution models and the estimation of the historical shift in elevations.
 
 This script is divided into 1 + 7 sections. The introduction section (Packages, theme and functions) describes the packages used and sets up the themes for the plots and a function used in the script. The first section of analyses (Field experiment) contains the code for the field experiment which aimed to understand whether adult Lepidoptera prefer to lay eggs on high- or low-elevation plants. The second section (Caterpillar preference) contains the analyses of a feeding choice experiment of caterpillars of two Lepidoptera species. The third section (Caterpillar performance) contains the analyses of a performance experiment which aimed to see any differences in growth between caterpillars feeding on a high- or a low-elevation host plant. The fourth section (Pupation rate) contains the code which allows us to estimate the differences in pupation rate between *Melitaea celadussa* caterpillars feeding either on high- or low-elevation host plants. The fifth section (Wing size) contains the code which allows us to estimate the differences in wing size between *M. celadussa* caterpillars feeding either on high- or low-elevation host plants. The sixth section (Chemical analyses) aims to test whether high- and low-elevation pairs of congeneric species have differences in defensive compound concentration in the leaves. Finally, the seventh section (Details of the R session) contains all the information about the R session used to run these analyses.
 
 ### Supplementary_analyses.R
 
-This script contains the analyses made for the supplementary material of the paper "Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species", excluding the species distribution model.
+This script contains the analyses made for the supplementary material of the paper "Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species", excluding the species distribution models and the estimation of the historical shift in elevations.
 
 This script is divided into 1 + 2 sections. The introduction section (Packages, theme and functions) describes the packages used and sets up the themes for the plots. The first section of analyses (Plant traits) contains the code for the analyses of the traits measured on the plants used for the field experiment and a on few other individuals (see "Material and methods"). This section includes PCA and PERMANOVA analyses on a set of traits (herbivory, size, number of leaves, SLA, number of stems and number of inflorescences) and analyses using a linear model for the C:N ratio of the plants. The second section (Temperature analyses) allows us to plot the average daily temperature recorded on the site during the field experiment.  Finally, the third section (Details of the R session) contains all the information about the R session used to run these analyses.
+
+### Lepido_historical_migration.R
+
+This script contains the analyses made for the main and the supplementary material for the paper "Adapting to change: exploring the consequences of climate-induced host plant shifts in two specialist Lepidoptera species" regarding the the historical shift of two Lepidoptera in higher elevations. 
+
+This script is divided into 1 + 3 sections. The introduction section (Packages, theme and functions) describes the packages used and sets up the themes for the plots. The first section of analyses (Plant traits) includes the loading and the check of the occurrence data. The second section aims to fill the gaps when elevation data are missing. Finally, the third section estimates the migration rates of our focal lepidoptera species according to the methods used by Vitasse et al., 2021.
 
 ### Species_distribution_models.R
 
